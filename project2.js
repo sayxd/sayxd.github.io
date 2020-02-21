@@ -4,10 +4,10 @@ $(document).ready(function() {
 
     if($($("#receivespambutton").children()[0]).attr("src")=="pics/unchecked.png") {
       $($("#receivespambutton").children()[0]).attr("src","pics/checked.png");
-      $("#spamyn").val("y");
+      $("#spam").val("y");
     } else {
       $($("#receivespambutton").children()[0]).attr("src","pics/unchecked.png");
-      $("#spamyn").val("n");
+      $("#spam").val("n");
     }
   });
 
@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   // Form validation
   $("#signupbutton").click(function() {
-    if($("#fn").val()=="" || $("#mi").val()=="" || $("#ln").val()=="") {
+    if($("#first_name").val()=="" || $("#middle_initial").val()=="" || $("#last_name").val()=="") {
       $("#name").addClass("error");
 
       return;
