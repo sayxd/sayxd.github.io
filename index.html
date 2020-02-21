@@ -31,7 +31,7 @@
         <source src="employment-movie.mp4" type="video/mp4">
       </video>
       <div id="videoplayer" tabindex="5">
-        <img width="50px" height="50px" src="pics/play.png">
+        <img width="50px" height="50px" src="pics/play.png" alt="Bar graph of employment for non-disabled and disabled Americans data">
       </div>
 
       <div id="links"><h2>Links</h2></div>
@@ -45,32 +45,37 @@
       <div id="signup"><h2>Sign Up!</h2></div>
       <form id="sign-up-form">
 
-      <p>
-        <label for="name">Name:</label><br>  
-        <label for="first_name">first name:</label>
-        <input name="first_name_text" type="text" size="10" id="first_name"> <br> 
-        <label for="middle_initial">Middle Initial:</label>.  
-        <input name="middle_initial_text" type="text" size="1" id="middle_initial"> <br> 
-        <label for="last_name">last name:</label>
-        <input name="last_name_text" type="text" size="10" id="last_name">
-        
-         <br>
-      </p>
-      <p>
-        <label for="email">Email:</label> <input id="email" name="emailtext" type="text" size="20">
-      </p>
-      <p>
+        <fieldset>
+          <legend>Name</legend><br>
+          <p>
+            <label for="first_name">First Name:</label>
+            <input name="first name text" type="text" size="10" id="first_name"> <br> 
+            <label for="middle_initial">Middle Initial:</label>.  
+            <input name="middle initial text" type="text" size="1" id="middle_initial"> <br> 
+            <label for="last_name">Last Name:</label>
+            <input name="last name text" type="text" size="10" id="last_name">
+            <br>
+          </p>
+        </fieldset>
+
+  
+        <label for="email">Email:</label>
+        <input id="email" name="emailtext" type="text" size="20">
+      
+     
         <span id="spamtext">Would you like to receive occassional emails with offers from us?</span>
         <div id="receivespambutton">
           <img src="pics/checked.png" alt="checkbox">
         </div>
         <input type="hidden" name="spamyn" id="spamyn" value="n">
-      </p>
+      
+
+
       <p>
-        <label for="comments">Comments:</label><br>
+        <h3><label for="comments">Comments:</label></h3><br>
         <textarea id="comments" name="commenttext"rows="5" cols="40"></textarea>
       </p>
-       <input type="button" value="Sign Up!" id="signupbutton">
+       <input type="button" name="sign up button" value="Sign Up!" id="signupbutton">
       </form>
 
     </div><!-- end div.container -->
