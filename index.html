@@ -1,5 +1,5 @@
-<?doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head
     <meta charset="utf-8">
     <title>Accessibility Course Overview</title>
@@ -25,7 +25,8 @@
         </a>
       </div>
 
-      <div id="accessibilitybanner"></div>
+     <!-- <div id="accessibilitybanner"></div>-->
+      <h1>Accessibility Overview</h1>
 
       <video width="480" height="360" id="thevideo">
         <source src="employment-movie.mp4" type="video/mp4">
@@ -57,23 +58,25 @@
             <br>
           </p>
         </fieldset>
+        <br>
 
   
-        <label for="email">Email:</label>
-        <input id="email" name="emailtext" type="text" size="20">
+        <label for="email">Email:</label><br>
+        <input id="email" name="emailtext" type="text" size="20"><br>
       
      
-        <span id="spamtext">Would you like to receive occassional emails with offers from us?</span>
+        <label for="spam">Would you like to receive occassional emails with offers from us?</label>
+
         <div id="receivespambutton">
           <img src="pics/checked.png" alt="checkbox">
         </div>
-        <input type="hidden" name="spamyn" id="spamyn" value="n">
+       <input type="hidden" name="spam" id="spam" value="n">
       
 
 
       <p>
-        <h3><label for="comments">Comments:</label></h3><br>
-        <textarea id="comments" name="commenttext"rows="5" cols="40"></textarea>
+        <label for="comments">Comments:</label><br>
+        <textarea id="comments" name="commenttext" rows="5" cols="40"></textarea>
       </p>
        <input type="button" name="sign up button" value="Sign Up!" id="signupbutton">
       </form>
