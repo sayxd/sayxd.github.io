@@ -1,5 +1,5 @@
 function spamCheckbox(event){
-    if (event.type == 'click'){
+    if (event.type == 'click' || event.which ==13){
       console.log("spam box clicked");
       if($($("#receivespam").children()[0]).attr("src")=="pics/unchecked.png") {
         $($("#receivespam").children()[0]).attr("src","pics/checked.png");

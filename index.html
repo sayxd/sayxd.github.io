@@ -12,10 +12,10 @@
     <div class="offscreen">
       Main Content
     </div>
-    <main>
+   
     <div class="container">
       <div class="navigation" role="navigation">
-        <a href="#home">
+        <a href="#home" tabindex="0">
           <img src="pics/home.png" alt="home">
         </a>
         <a href="#links">
@@ -28,64 +28,56 @@
 
      <!-- <div id="accessibilitybanner"></div>-->
       <h1>Accessibility Overview</h1>
+      <main>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/F1NR-_YqOgE" title="employment video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-      <!--<video width="480" height="360" id="thevideo">
-        <source src="employment-movie.mp4" type="video/mp4">
-        <track label="English" kind="subtitles" srclang="en" src="subtitles.txt" default>
-
-      </video>
-      <div id="videoplayer" tabindex="5">
-        <img width="50px" height="50px" src="pics/play.png" alt="play button">
-      </div>-->
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/F1NR-_YqOgE" title="employment video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-      <div id="links"><h2>Links</h2></div>
-      <ul>
-        <li><a href="https://visit.columbia.edu/content/accessibility">Accessibility Research at Columbia</a></li>
-        <li><a href="https://barnard.edu/disabilityservices">Disability Services at Barnard</a></li>
-        <li><a href="http://www.hampsterdance.com/classics/originaldance.htm">Hampster Dance</a></li>
-      </ul>
+        <div id="links"><h2>Links</h2></div>
+        <ul>
+          <li><a href="https://visit.columbia.edu/content/accessibility">Accessibility Research at Columbia</a></li>
+          <li><a href="https://barnard.edu/disabilityservices">Disability Services at Barnard</a></li>
+          <li><a href="http://www.hampsterdance.com/classics/originaldance.htm">Hampster Dance</a></li>
+        </ul>
 
 
-      <div id="signup"><h2>Sign Up!</h2></div>
-      <form id="sign-up-form">
+        <div id="signup"><h2>Sign Up!</h2></div>
+        <form id="sign-up-form">
 
-        <fieldset>
-          <legend id="name">Name</legend><br>
-          <p>
-            <label for="first_name">First Name:</label>
-            <input name="first name text" type="text" size="10" id="first_name"> <br> 
-            <label for="middle_initial">Middle Initial:</label>.  
-            <input name="middle initial text" type="text" size="1" id="middle_initial"> <br> 
-            <label for="last_name">Last Name:</label>
-            <input name="last name text" type="text" size="10" id="last_name">
-            <br>
-          </p>
-        </fieldset>
-        <br>
+          <fieldset>
+            <legend id="name">Name</legend><br>
+            <p>
+              <label for="first_name">First Name:</label>
+              <input name="first name text" type="text" size="10" id="first_name"> <br> 
+              <label for="middle_initial">Middle Initial:</label>.  
+              <input name="middle initial text" type="text" size="1" id="middle_initial"> <br> 
+              <label for="last_name">Last Name:</label>
+              <input name="last name text" type="text" size="10" id="last_name">
+              <br>
+            </p>
+          </fieldset>
+          <br>
 
-  
-        <label for="email" id="em">Email:</label><br>
-        <input id="email" name="emailtext" type="text" size="20"><br>
-      
-     
-        <label for="receivespam">Would you like to receive occassional emails with offers from us?</label>
+    
+          <label for="email" id="em">Email:</label><br>
+          <input id="email" name="emailtext" type="text" size="20"><br>
+        
+       
+          <label for="receivespam">Would you like to receive occassional emails with offers from us?</label>
 
-        <div id="receivespam" role="checkbox" aria-checked="false" tabindex="0" onclick="spamCheckbox(event)">         
-            <img src="pics/unchecked.png" alt="checkbox">
-        </div>
-       <!--<input type="hidden" name="spam" id="spam" value="n">-->
-      
+          <div id="receivespam" role="checkbox" aria-checked="false" tabindex="0" onclick="spamCheckbox(event)" onkeydown="spamCheckbox(event)">         
+              <img src="pics/unchecked.png" alt="checkbox">
+          </div>
+         <!--<input type="hidden" name="spam" id="spam" value="n">-->
+        
 
 
-      <p>
-        <label for="comments">Comments:</label><br>
-        <textarea id="comments" name="commenttext" rows="5" cols="40"></textarea>
-      </p>
-       <input type="button" name="sign up button" value="Sign Up!" id="signupbutton">
-      </form>
+        <p>
+          <label for="comments">Comments:</label><br>
+          <textarea id="comments" name="commenttext" rows="5" cols="40"></textarea>
+        </p>
+         <input type="button" name="sign up button" value="Sign Up!" id="signupbutton">
+        </form>
 
-    </div><!-- end div.container -->
+      </div><!-- end div.container -->
     </main>
   </body>
 </html>
