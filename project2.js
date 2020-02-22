@@ -1,15 +1,20 @@
+function spamCheckbox(event){
+    if (event.type == 'click'){
+      console.log("spam box clicked");
+      if($($("#receivespam").children()[0]).attr("src")=="pics/unchecked.png") {
+        $($("#receivespam").children()[0]).attr("src","pics/checked.png");
+        $("#receivespam").attr("aria-checked", "true");
+      } else {
+        $($("#receivespam").children()[0]).attr("src","pics/unchecked.png");
+        $("#receivespam").attr("aria-checked", "true");
+      }
+    }
+
+}
+
 $(document).ready(function() {
   // Toggle the receive spam checkbox
-  $("#receivespambutton").click(function() {
 
-    if($($("#receivespambutton").children()[0]).attr("src")=="pics/unchecked.png") {
-      $($("#receivespambutton").children()[0]).attr("src","pics/checked.png");
-      $("#spam").val("y");
-    } else {
-      $($("#receivespambutton").children()[0]).attr("src","pics/unchecked.png");
-      $("#spam").val("n");
-    }
-  });
 
 
   // Play video
@@ -34,12 +39,12 @@ $(document).ready(function() {
       $("#name").removeClass("error");
     }
 
-    if($("#em").val()=="") {
-      $("#email").addClass("error");
+    if($("#email").val()=="") {
+      $("#em").addClass("error");
 
       return;
     } else {
-      $("#name").removeClass("error");
+      $("#em").removeClass("error");
     }
 
     alert("Thank you!  Please watch your email for our exciting newsletter and offers!");
