@@ -6,7 +6,7 @@ function spamCheckbox(event){
         $("#receivespam").attr("aria-checked", "true");
       } else {
         $($("#receivespam").children()[0]).attr("src","pics/unchecked.png");
-        $("#receivespam").attr("aria-checked", "true");
+        $("#receivespam").attr("aria-checked", "false");
       }
     }
 
