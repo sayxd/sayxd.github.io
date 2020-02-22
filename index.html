@@ -13,7 +13,7 @@
       Main Content
     </div>
     <div class="container">
-      <div class="navigation">
+      <div class="navigation" role="navigation">
         <a href="#home">
           <img src="pics/home.png" alt="home">
         </a>
@@ -61,13 +61,13 @@
         <br>
 
   
-        <label for="email">Email:</label><br>
+        <label for="email" id="em">Email:</label><br>
         <input id="email" name="emailtext" type="text" size="20"><br>
       
      
         <label for="spam">Would you like to receive occassional emails with offers from us?</label>
 
-        <div id="receivespambutton">
+        <div id="receivespambutton" role="checkbox" aria-checked="false" tabindex="0">
           <img src="pics/checked.png" alt="checkbox">
         </div>
        <input type="hidden" name="spam" id="spam" value="n">
