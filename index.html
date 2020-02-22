@@ -12,6 +12,7 @@
     <div class="offscreen">
       Main Content
     </div>
+    <main>
     <div class="container">
       <div class="navigation" role="navigation">
         <a href="#home">
@@ -67,10 +68,10 @@
      
         <label for="spam">Would you like to receive occassional emails with offers from us?</label>
 
-        <div id="receivespambutton" role="checkbox" aria-checked="false" tabindex="0">
-          <img src="pics/checked.png" alt="checkbox">
+        <div id="receivespambutton" role="checkbox" aria-checked="false" tabindex="0" onclick="spamCheckbox(event)">         
+            <img src="pics/unchecked.png" alt="checkbox">
         </div>
-       <input type="hidden" name="spam" id="spam" value="n">
+       <!--<input type="hidden" name="spam" id="spam" value="n">-->
       
 
 
@@ -82,5 +83,6 @@
       </form>
 
     </div><!-- end div.container -->
+    </main>
   </body>
 </html>
