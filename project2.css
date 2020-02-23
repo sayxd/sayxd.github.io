@@ -1,6 +1,5 @@
 html,body {
   font-family: arial;
-  font-size: 1.1em;
 }
 
 .container {
@@ -26,7 +25,7 @@ input,textarea {
 
 a {
   text-decoration: none;
-  color: gray;
+  color: #525252;
 }
 
 .offscreen {
@@ -43,7 +42,8 @@ a {
 }
 
 .error {
-  color: red;
+  /*color: #AF1B02;*/
+  font-weight: bold;
 }
 
 #accessibilitybanner {
